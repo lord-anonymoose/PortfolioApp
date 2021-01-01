@@ -7,31 +7,6 @@
 
 import SwiftUI
 
-struct avatarView: View {
-    var image: String
-    var width:CGFloat = 100
-    var height:CGFloat = 100.0
-    var body: some View {
-        Image(image)
-            .resizable()
-            .frame(
-                width: width,
-                height: height
-            )
-            .clipShape(Circle())
-            .padding(.all, 5)
-        }
-}
-
-struct cardView: View {
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 15)
-                .foregroundColor(.green)
-        }
-    }
-}
-
 struct ContentView: View {
     
     var body: some View {
