@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+        
     var body: some View {
         NavigationView {
-            ScrollView {
-                ZStack {
-                    cardView()
-                        .padding(.all)
-                    avatarView(image: "ChristmasPhil")
-                        .padding(.all)
+            ZStack {
+                //LinearGradient(gradient: backroundGradient, startPoint: .topLeading, endPoint: .bottomTrailing)
+                PortfolioApp.background
+                    .edgesIgnoringSafeArea(.all)
+                ScrollView {
+                    ZStack {
+                        cardView()
+                        HStack {
+                            avatarView(image: PhilippPhotos)
+                            Text("Philipp Lazarev, 21       ")
+                        }
+                    }
                 }
-            }
                 .navigationTitle("About me")
+            }
         }
     }
 }

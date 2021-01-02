@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+let backroundGradient = Gradient(colors: [Color.green, Color.orange, Color.yellow])
+
+let background = LinearGradient(gradient: backroundGradient, startPoint: .topLeading, endPoint: .bottomTrailing)
+
+let PhilippPhotos = ["ChristmasPhil", "SunnyPhilipp", "TravelPhilipp", "WinterPhilipp"]

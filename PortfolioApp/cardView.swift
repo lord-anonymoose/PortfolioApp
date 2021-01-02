@@ -11,8 +11,11 @@ struct cardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)
-                .foregroundColor(.green)
+                .foregroundColor(.white)
+                .opacity(0.8)
         }
+        .padding(.leading, 10)
+        .padding(.trailing, 10)
     }
 }
 struct cardView_Previews: PreviewProvider {

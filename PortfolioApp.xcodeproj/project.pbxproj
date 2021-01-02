@@ -13,6 +13,7 @@
 		1701A5A7259F54AA004F4FCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1701A5A6259F54AA004F4FCF /* Preview Assets.xcassets */; };
 		17602235259FAC3100608151 /* avatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17602234259FAC3100608151 /* avatarView.swift */; };
 		17602238259FC7F700608151 /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17602237259FC7F700608151 /* cardView.swift */; };
+		1760223B259FCBB800608151 /* styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760223A259FCBB800608151 /* styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1701A5A8259F54AA004F4FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17602234259FAC3100608151 /* avatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarView.swift; sourceTree = "<group>"; };
 		17602237259FC7F700608151 /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
+		1760223A259FCBB800608151 /* styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				1701A59F259F54A6004F4FCF /* PortfolioAppApp.swift */,
 				1701A5A1259F54A6004F4FCF /* ContentView.swift */,
+				1760223A259FCBB800608151 /* styles.swift */,
 				17602237259FC7F700608151 /* cardView.swift */,
 				17602234259FAC3100608151 /* avatarView.swift */,
 				1701A5A3259F54AA004F4FCF /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1701A5A2259F54A6004F4FCF /* ContentView.swift in Sources */,
+				1760223B259FCBB800608151 /* styles.swift in Sources */,
 				1701A5A0259F54A6004F4FCF /* PortfolioAppApp.swift in Sources */,
 				17602238259FC7F700608151 /* cardView.swift in Sources */,
 				17602235259FAC3100608151 /* avatarView.swift in Sources */,
