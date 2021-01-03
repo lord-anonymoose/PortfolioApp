@@ -11,8 +11,9 @@ import SwiftUI
 struct avatarView: View {
     var images:[String]
     @State private var currentImage = 0
-    var width:CGFloat = 100
-    var height:CGFloat = 100.0
+    @State private var degrees = 180.0
+    @State var width:CGFloat = 80
+    @State var height:CGFloat = 80
     
     init (image: [String]) {
         self.images = image
@@ -27,16 +28,26 @@ struct avatarView: View {
     }
     
     var body: some View {
-            Button (action: changeImage)
-            {
-                Image(images[currentImage])
-                    .resizable()
-                    .frame(
-                        width: width,
-                        height: height
-                    )
-                    .clipShape(Circle())
-                    .padding(.all, 10)
+        Image(images[currentImage])
+            .resizable()
+            .frame(
+                width: width,
+                height: height
+            )
+        //Link(destination: githubURL!, label: {
+        //    Text("Link")
+        //})
+            .clipShape(Circle())
+            .padding(.all, 10)
+            .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
+            .onTapGesture {
+            withAnimation {
+                                    self.degrees += 180
+                                    self.width = 80 // add other animated stuff here
+                                    self.height = 80
+
+                                }
+                changeImage()
             }
     }
 }

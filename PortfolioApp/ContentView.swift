@@ -12,16 +12,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                //LinearGradient(gradient: backroundGradient, startPoint: .topLeading, endPoint: .bottomTrailing)
                 PortfolioApp.background
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     ZStack {
                         cardView()
-                        HStack {
-                            avatarView(image: PhilippPhotos)
-                            Text("Philipp Lazarev, 21       ")
-                        }
                     }
                 }
                 .navigationTitle("About me")

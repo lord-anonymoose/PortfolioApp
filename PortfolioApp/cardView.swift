@@ -13,6 +13,20 @@ struct cardView: View {
             RoundedRectangle(cornerRadius: 15)
                 .foregroundColor(.white)
                 .opacity(0.8)
+            HStack {
+                avatarView(image: PhilippPhotos)
+                Spacer()
+                VStack (alignment: .leading) {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Text("Philipp Lazarev, 21")
+                            .font(.headline)
+                        Spacer()
+                    }
+                    Spacer()
+                }
+            }
         }
         .padding(.leading, 10)
         .padding(.trailing, 10)
