@@ -15,8 +15,9 @@ struct ContentView: View {
                 PortfolioApp.background
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
-                    ZStack {
+                    VStack {
                         cardView()
+                        socialMediaBar()
                     }
                 }
                 .navigationTitle("About me")

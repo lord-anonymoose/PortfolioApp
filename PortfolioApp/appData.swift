@@ -14,9 +14,4 @@ let background = LinearGradient(gradient: backroundGradient, startPoint: .topLea
 //Images
 let PhilippPhotos = ["ChristmasPhil", "SunnyPhilipp", "TravelPhilipp", "WinterPhilipp"]
 
-//URL's
-let githubURL = URL(string: "https://github.com/lord-anonymoose")
-let twitterURL = URL(string: "https://twitter.com/severus_")
-let linkedinURL = URL(string: "https://www.linkedin.com/in/philipp-lazarev-782b14167")
-
 
