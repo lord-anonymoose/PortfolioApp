@@ -34,9 +34,6 @@ struct avatarView: View {
                 width: width,
                 height: height
             )
-        //Link(destination: githubURL!, label: {
-        //    Text("Link")
-        //})
             .clipShape(Circle())
             .padding(.all, 10)
             .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
