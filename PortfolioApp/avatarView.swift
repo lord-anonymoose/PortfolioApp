@@ -11,7 +11,7 @@ import SwiftUI
 struct avatarView: View {
     var images:[String]
     @State private var currentImage = 0
-    @State private var degrees = 180.0
+    @State private var degrees = 0.0
     @State var width:CGFloat = 80
     @State var height:CGFloat = 80
     
@@ -39,12 +39,12 @@ struct avatarView: View {
             .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
             .onTapGesture {
             withAnimation {
-                                    self.degrees += 180
+                                    self.degrees += 360
                                     self.width = 80 // add other animated stuff here
                                     self.height = 80
 
                                 }
-                changeImage()
+                    changeImage()
             }
     }
 }
